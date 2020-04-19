@@ -28,24 +28,22 @@ class CreateTransactionService {
       throw new AppError('Invalid balance with type outcome', 400);
     }
 
-    const checkCategoryExists = await categoryRepository.findOne({
+    let transactionCategory = await categoryRepository.findOne({
       where: { title: category },
     });
 
-    let titleCategory = '';
-    if (!checkCategoryExists) {
-      const saveCategory = categoryRepository.create({ title: category });
-      const categorySaved = await categoryRepository.save(saveCategory);
-      titleCategory = categorySaved.id;
-    } else {
-      titleCategory = checkCategoryExists.id;
+    if (!transactionCategory) {
+      transactionCategory = categoryRepository.create({
+        title: category,
+      });
+      await categoryRepository.save(transactionCategory);
     }
 
     const transaction = transactionsRepository.create({
       title,
       value,
       type,
-      category_id: titleCategory,
+      category: transactionCategory,
     });
 
     await transactionsRepository.save(transaction);
