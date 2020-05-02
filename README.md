@@ -46,7 +46,7 @@ Clone the project: `git clone https://github.com/leopacciulli/Bootcamp-GoFinance
 
 ````zsh
 # to enter the Back-End folder
-$ cd Desafio06-Node-Database-UploadFiles
+$ cd Bootcamp-GoFinances-Backend
 
 # to download the dependencies
 $ yarn
@@ -61,7 +61,7 @@ $ yarn dev:server
 
 ````zsh
 # to enter the Back-End folder
-$ cd Desafio06-Node-Database-UploadFiles
+$ cd Bootcamp-GoFinances-Backend
 
 # to run tests
 $ yarn start
