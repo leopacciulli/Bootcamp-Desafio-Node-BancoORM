@@ -1,41 +1,86 @@
-<img alt="GoStack" src="./src/assets/gostack.png" />
+<div align="center">
+  <img alt="GoStack" src="./src/assets/gostack.png" width="500px" />
+</div>
 
 <h3 align="center">
-   Desafio 06: Banco de dados e upload de arquivos no Node.js
+  Challenge 06 of the GoStack: Database and Upload csv from Node.js
 </h3>
 
-<p align="center">“Só deseje as coisas as quais você está disposto a lutar”!</blockquote>
+<p align="center">“Just wish for the things you're willing to fight for”!</blockquote>
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/leopacciulli/Bootcamp-GoFinances-Backend?color=yellow">
+
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/leopacciulli/Bootcamp-GoFinances-Backend?color=yellow">
+
+  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/leopacciulli/Bootcamp-GoFinances-Backend?color=yellow">
+
+  <img alt="NodeJS version" src="https://img.shields.io/badge/Node.JS-v12.16.1-689f63?style=flat&logoColor=689f63&logo=node.js">
+</p>
 
 <br>
 
-## :rocket: Sobre o desafio
+### 📝 About the project
+Development of the back-end of the transaction management application, being able to analyze the monetary income and outcome. With option to import transactions via CSV files.
 
-- Continuação do desenvolvimento da aplicação de gestão de transações, com Node.js junto ao TypeScript, mas dessa vez incluindo o uso de banco de dados (PostgreSQL) com o TypeORM e envio de arquivos com o Multer!
-- Uma aplicação que deve armazenar transações financeiras de entrada e saída, que deve permitir o cadastro e a listagem dessas transações, além de permitir a geração de relatórios a partir do envio de um arquivo csv.
+<br>
 
-- Utilizado Docker com DBeaver para consulta dos dados;
+## 🤖 Back-End
+The Back-End was developed with Node.js and TypeScript, the connection to the PostgreSQL database was made with DBeaver using Knex.js and Docker to create containers with TypeORM. For standardization and organization of the code was used ESLint, Prettier and EditorConfig.
 
-## :checkered_flag: Startando o projeto
+### 🛠 Technologies
+- **[Node.JS](https://nodejs.org/en/)**
+- *[Express](https://expressjs.com/pt-br/)*
+- *[Nodemon](https://nodemon.io/)*
+- *[Knex.JS](http://knexjs.org/)*
 
-PS: ⚠️ Para rodar o projeto é necessário estar utilizando o Docker, criar um banco de dados com o nome gostack_postgres na porta 5432.
+<br>
 
-1° Clonar: `git clone https://github.com/leopacciulli/Bootcamp-Desafio-Node-BancoORM.git`
+## 🏁 Starting the back-end
+Clone the project: `git clone https://github.com/leopacciulli/Bootcamp-GoFinances-Backend.git`
 
-2° Rodar o back end:
+<br>
 
-```sh
-$ cd Bootcamp-Desafio-Node-BancoORM
+🤖 To run the **Back-End** you must create a Database with the name: **gostack_desafio06** in DBeaver and run a docker container with the name: **gostack_postgres** on port **:5432**
+<br>Then open the terminal and run the following commands:
+
+````zsh
+# to enter the Back-End folder
+$ cd Desafio06-Node-Database-UploadFiles
+
+# to download the dependencies
+$ yarn
+
+# to start the application on port 3333
 $ yarn dev:server
-```
+````
 
-3° Rodar os testes:
+<br>
 
-PS: ⚠️ Antes de rodar os testes, crie um banco de dados com o nome "gostack_desafio06_tests" para que todos os testes possam executar corretamente.
+⚙️ Optional step to **run the Tests:** you must create a Database with the name: **gostack_desafio06_tests** in DBeaver and run a docker container with the name: **gostack_postgres** on port **:5432**
 
-```sh
-$ cd Bootcamp-Desafio-Node-BancoORM
-$ yarn test
-```
+````zsh
+# to enter the Back-End folder
+$ cd Desafio06-Node-Database-UploadFiles
+
+# to run tests
+$ yarn start
+````
+
 ---
 
-Desenvolvido por: [Leonardo Pacciulli](https://www.linkedin.com/in/leonardo-pacciulli-a4b86a92/)
+<h3 align="center">
+  Made with love by 💙 Leonardo Pacciulli
+</h3>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/leonardo-pacciulli">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-/in/leonardopacciulli-0e76a8?style=flat&logoColor=white&logo=linkedin">
+  </a>
+  <a href="https://www.facebook.com/paculli">
+    <img alt="Facebook" src="https://img.shields.io/badge/Facebook-/LeonardoPacciulli-1778F2?style=flat&logoColor=white&logo=facebook">
+  </a>
+  <a href="https://www.instagram.com/leopacciulli/">
+    <img alt="Instagram" src="https://img.shields.io/badge/Instagram-@leopacciulli-833AB4?style=flat&logoColor=white&logo=instagram">
+  </a>
+</p>
